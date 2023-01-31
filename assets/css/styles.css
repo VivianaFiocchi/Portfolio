@@ -46,17 +46,19 @@ body {
   font-family: var(--font-family);
 }
 
+/* Navbar */
+
 nav {
-   position: sticky;
-   top: 0;
-   left: 0;
-   z-index: 1;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   padding: 1.5rem 3.5rem;
-   background-color: var(--bg-color);
-   box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav h1 {
@@ -64,10 +66,9 @@ nav h1 {
 }
 
 nav a {
-  color:var(--primary-color);
+  color: var(--primary-color);
   transition: var(--transition);
 }
-
 nav a:hover {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
@@ -82,7 +83,7 @@ nav ul li {
   font-weight: var(--bold-font);
 }
 
-.menu-hamburguesa {
+.burger-menu {
   color: var(--primary-color);
   font-size: 2rem;
   border: 0;
@@ -90,6 +91,8 @@ nav ul li {
   cursor: pointer;
   display: none;
 }
+
+/* Hero section */
 
 .hero {
   display: flex;
@@ -99,17 +102,21 @@ nav ul li {
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+
 }
 .hero img {
-  height: 20.5rem;
-  width: 20.5rem;
+  margin-top: 1rem;
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 5rem;
 }
 
 .bio {
+  margin-top: 1rem;
   width: 25rem;
   padding: 0.625rem;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  box-shadow: 0px 2px 30px 0.5px var(--primary-shadow);
 }
 
 .bio h1 {
@@ -121,40 +128,57 @@ nav ul li {
   padding: 0.3rem 0;
 }
 
-.mas-sobre {
+.bio-titulo {
+  text-align: center;
+}
+
+/* More about */
+.more-about {
+  margin-top: 1rem;
   background-color: var(--bg-color);
   padding: 1rem 6rem;
 }
 
-.mas-sobre h2 {
+.more-about h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
 
-.mas-sobre p {
+.more-about h3 {
+  margin-bottom: var(--bottom-margin);
+  text-align: center;
+}
+
+.more-about li {
+  text-align: center;
+}
+.more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
-.habilidades {
+
+/* Skills section */
+.skills {
   max-width: 68.75rem;
   margin: auto;
   text-align: center;
   margin-top: 2.5rem;
 }
 
-.encabezado-habilidad {
+.skill-header {
   margin-bottom: 1rem;
 }
 
-.contenedor-habilidades img {
+.skills-wrapper img {
   padding: 1.25rem;
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  width: 9.875rem;
+  height: 9.25rem;
 }
-.icon-card{
+
+.icon-card {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
@@ -162,64 +186,80 @@ nav ul li {
   margin: 10px;
 }
 
-.proyectos {
+/* Projects section */
+.projects {
   background-color: var(--bg-color);
   padding: 32px 0;
   margin-top: 2rem;
 }
 
-.project-pic{
-  width: 65%;
-  height: 60%;
+.project-pic {
+  width: 15rem;
+  height: 5rem;
 }
 
-.contenedor-de-proyectos {
+.projects-container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.titulo-de-proyectos {
+
+.projects-title {
+  margin-top: 3rem;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.contenedor-de-proyecto {
+.project-container {
   text-align: center;
   width: 21.875rem;
   padding: 1rem;
 }
 
-.contenedor-de-proyecto p {
+.project-details p {
+  display: flex;
   padding: 0.4rem;
   text-align: justify;
+  font-size: 0.85rem;
 }
 
-.titulo-proyecto {
+.header-card {
+  margin-bottom: var(--bottom-margin);
+  padding: 0.4rem;
+}
+
+.project-title {
+  margin-bottom: var(--bottom-margin);
+  margin-top: 5%;
+}
+
+.project-details {
   margin-bottom: var(--bottom-margin);
 }
 
-.detalles-proyecto {
-  margin-bottom: var(--bottom-margin);
-}
-
-.tarjeta-de-proyecto {
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
   padding: 20px;
   margin: 10px;
+  overflow: hidden;
 }
 
-.contacto {
+/* Contacts section */
+.contact {
   margin-top: 2rem;
 }
 
-.contacto h2 {
+.contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
 }
 
-.formulario-contacto-contenedor {
+.contact-form-container {
   max-width: 40.75rem;
   margin: 0 auto;
   padding: 0.938rem;
@@ -227,18 +267,18 @@ nav ul li {
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 
-.formulario-contacto-contenedor label {
+.contact-form-container label {
   line-height: 2.7em;
   font-weight: var(--bold-font);
   color: var(--primary-color);
 }
 
-.formulario-contacto-contenedor textarea {
+.contact-form-container textarea {
   min-height: 6.25rem;
   font-size: 14px;
 }
 
-.formulario-contacto-contenedor .input-field {
+.contact-form-container .input-field {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -248,6 +288,7 @@ nav ul li {
   font-size: 0.875rem;
   outline: none;
 }
+
 .input-field::placeholder {
   padding: 0.5rem;
   color: var(--primary-color);
@@ -264,13 +305,15 @@ nav ul li {
   font-weight: var(--bold-font);
   transition: var(--transition);
 }
+
 .submit-btn:hover {
   background-color: var(--primary-color);
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
 
-.sociales {
+/* Social buttons */
+.socials {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -283,6 +326,7 @@ nav ul li {
   height: 2rem;
 }
 
+/* Footer section */
 footer {
   background-color: var(--bg-color);
   padding: 1.25rem;
@@ -290,7 +334,8 @@ footer {
   margin: 2rem 0 0;
 }
 
-.desplazarse-hacia-arriba {
+/* Scroll to top button */
+.scroll-up {
   position: fixed;
   right: 0.5%;
   bottom: 3%;
@@ -301,6 +346,7 @@ footer {
   width: 3rem;
   height: 3rem;
 }
+
 /* Media queries for responsiveness */
 @media screen and (max-width: 720px) {
   nav {
@@ -322,7 +368,7 @@ footer {
     margin: 8px;
   }
 
-  .menu-hamburguesa {
+  .burger-menu {
     display: block;
   }
 
@@ -337,25 +383,28 @@ footer {
   }
 
   .hero img {
-    height: 37.5rem;
-    width: 30rem;
+    margin-top: 5rem;
+    height: 10.5rem;
+    width: 10.5rem;
+    border-radius: 5rem;
   }
+  
 
   .bio {
-    margin-top: -7rem;
+    margin-top: 7rem;
     width: 20.5rem;
   }
 
-  .mas-sobre {
+  .more-about {
     margin-top: 2rem;
     padding: 1rem 3.5rem;
   }
 
-  .mas-sobre h2 {
+  .more-about h2 {
     text-align: center;
   }
 
-  .mas-sobre p {
+  .more-about p {
     text-align: justify;
   }
 
@@ -364,34 +413,37 @@ footer {
     height: 5.25rem;
   }
 
-  .contenedor-de-proyectos {
+  .projects-container {
     flex-direction: column;
   }
 
-  .contenedor-de-proyecto {
-    width: 20.875rem;
-  }
+  .project-container {
+    width: 20.875rem; 
+  overflow: scroll; }
 
-  .formulario-contacto-contenedor{
+  .contact-form-container {
     max-width: 23.75rem;
   }
 }
 
 @media screen and (max-width: 420px) {
   .hero img {
-    height: 37.5rem;
-    width: 23rem;
+    margin-top: 5rem;
+    height: 10.5rem;
+    width: 10.5rem;
+    border-radius: 5rem;
   }
-
+  
   .bio {
     width: 18.3rem;
   }
 
-  .contenedor-de-proyecto {
+  .project-container {
     width: 17.875rem;
+    overflow: scroll;
   }
 
-  .formulario-contacto-contenedor {
+  .contact-form-container {
     max-width: 17.75rem;
   }
 }
