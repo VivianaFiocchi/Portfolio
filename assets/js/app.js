@@ -1,5 +1,5 @@
 // funcionalidad de desplazar hacia arriba
-const desplazarArriba = document.querySelector("#desplazarse-hacia-arriba");
+const desplazarArriba = document.querySelector("#scroll-up");
 
 desplazarArriba.addEventListener("click", () => {
   window.scrollTo({
@@ -9,7 +9,7 @@ desplazarArriba.addEventListener("click", () => {
   });
 });
 
-const burger = document.querySelector("#menu-hamburguesa");
+const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
