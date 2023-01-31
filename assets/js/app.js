@@ -9,7 +9,7 @@ desplazarArriba.addEventListener("click", () => {
   });
 });
 
-const burger = document.querySelector("#burger-menu");
+const burger = document.querySelector("#menu-hamburguesa");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
 
